@@ -6,8 +6,8 @@
   </head>
   <body>
     
-    <a-scene id = "scene">
-      
+    <a-scene id = "scene1">
+      <button onclick="switchScene" position="0 0 0"> switch scene </button>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#white"></a-sphere>
       <a-sphere position="0 3 -5" radius="1" color="#white"></a-sphere>
       <a-sphere position="-.5 3.4 -4" radius=".17" color="black"></a-sphere>
@@ -26,7 +26,7 @@
     </a-scene>
       <script src = "script.js"> </script>
 
-      <a-scene id = "scene2">
+      <a-scene id = "scene2" style="display:none">
       <a-sky src="quad1.jpg" rotation= "0 -130 0"> </a-sky>
       </a-scene>
   </body>
