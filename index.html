@@ -5,12 +5,16 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   </head>
   <body>
-      
-    <a-scene>
-      <script src = "script.js"> </script>
+    <a-scene id="scene1">
+      <button onclick = "switchScene()" style = "position: absolute; z-index: 1"> Switch Scene</button>
+      <a-sky src="quad3.jpeg" rotation= "0 -130 0"> </a-sky>
+    </a-scene>
 
-      <a-scene id = "scene2" style="display:none">
+    <a-scene id = "scene2" style="display:none">
       <a-sky src="quad1.jpg" rotation= "0 -130 0"> </a-sky>
-      </a-scene>
+    </a-scene>
+    
+    <script src = "script.js"> </script>
+
   </body>
 </html>
