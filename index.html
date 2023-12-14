@@ -6,11 +6,12 @@
   </head>
   <body>
     <a-scene id="scene1">
-      <button onclick = "switchScene()" style = "position: absolute; z-index: 1"> Switch Scene</button>
       <a-sky src="quad3.jpeg" rotation= "0 -130 0"> </a-sky>
+      <button class="button" onclick = "switchScene()" style = "position: absolute; z-index: 1"> Switch Scene</button>
     </a-scene>
 
     <a-scene id = "scene2" style="display:none">
+      <button class="button" onclick = "switchScene()"> Switch Scene</button>
       <a-sky src="quad1.jpg" rotation= "0 -130 0"> </a-sky>
     </a-scene>
     
